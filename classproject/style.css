@@ -1,0 +1,173 @@
+h1{
+    color:green;
+}
+#red{
+    color:red;
+}
+.yellow{
+
+    color:yellow;
+}
+h1:hover
+{
+    color:blueviolet;
+}
+.parent h1{
+    color:blue;
+}
+div h1{
+    color:orange;
+}
+div #red:hover{
+    color:black;
+}
+/*button{
+    background-color:yellow;
+    border:2px solid black;
+    padding:20px;
+    margin:10px;
+    border-radius:40px;
+}
+button:hover{
+    background-color:blueviolet;
+    color:white;
+}*/
+.content button{
+    border:none;
+    background-color:hwb(284 71% 2%);
+    padding:10px 20px;
+    width:100%;
+}
+.card{
+    width:300px;
+    border:1px solid black;
+    margin:10px;
+    padding:10px;
+    background-color:hsl(0, 1%, 73%);
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+.card image{
+    width:100%;
+}
+.content{
+    padding:20px;
+    background-color:white;
+}
+.content h1{
+    margin:0;
+    color:black;
+}
+.parent1
+{
+    background-color:red;
+    padding:20px;
+    display:flex;
+    flex-direction:row;
+    margin:10px;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+.child1
+{
+    padding:30px;
+    background-color:yellow;
+    border:1px solid black;
+    
+}
+.parent2
+{
+    background-color:red;
+    padding:20px;
+    display:flex;
+    flex-direction:row;
+    margin:10px;
+    flex-wrap:wrap-reverse;
+    justify-content:flex-start;
+    align-items:flex-end;
+    gap:10px;
+}
+.long
+{
+    padding:20px;
+    background-color:yellow;
+    border:1px solid black;
+}
+.navbar
+{
+    background-color:darkblue;
+    color:white;
+    padding:10px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.elemnt
+{
+  display:flex;
+  gap:20px;  
+}
+.btn
+{
+   display:flex;
+  gap:10px; 
+}
+.b1{
+    background-color: aquamarine;
+    transition:all 1s;
+    padding: 10px 20px;
+    border:none;
+    border-radius:5px;
+    margin:10px;
+    animation:bounce 1s 10;
+}
+.b1:hover{
+    background:yellow;
+    color:white;
+    transform:scale(1.5);
+}
+@keyframes bounce{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-20px);}
+    100%{transform:translateY(0);}
+}
+@keyframes heartbeat{
+    0%{transform:scale(1);}
+    25%{transform:scale(1.5);}
+    50%{transform:scale(1);}
+    75%{transform:scale(0.75);}
+    100%{transform:scale(1);}
+}
+.b{
+    /*background-color:red;
+    border:none;
+    border-radius:100px;
+    margin:auto;
+    height:50px;
+    width:50px;*/
+    animation:heartbeat 1s 10;
+}
+@media(max-width:768px)
+{
+    .b1{
+        background-color:red;
+    }
+}
+@media(min-width:480px)and(max-width:768px)
+{
+    .b{
+        animation:bounce 1s infinite;
+    }
+}
+@media(max-width:480px)
+{
+    .card{
+        width:100%;
+    }
+    .navbar
+    {
+        display: none;
+    }
+}

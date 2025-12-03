@@ -1,0 +1,16 @@
+
+  <h1 style="color:red;">Hello World</h1><!--inline-->
+  <head>
+ <style>
+        h1{
+            color:red;
+        }
+    </style>
+    </head>
+specificity
+0-0-0
+id-class-element
+pseudo class comes under class 
+highest specificiy gives priority if conflict occurs 
+if two has same specificity then top down approach
+tailwind get started installation play cnd copy the script
