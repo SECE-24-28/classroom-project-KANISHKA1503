@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-950 text-white flex justify-center">
+    <div class="flex flex-col bg-slate-800 px-10 pt-7 pb-15 mt-30 rounded-xl justify-start w-[400px] gap-3">
+       <div > <h1 class="font-bold text-2xl mt-2">Simple JS Quiz</h1>
+        <p class="text-sm mt-2 md-4" id="question-no"></p>
+    </div> 
+    <div class="md-4 mt-2">
+        <h4 id="question" class="text-xl text-white"></h4>
+    </div> 
+    <div class="flex flex-col gap-3" >
+ <div class="option px-2 py-3 border-1 rounded-md bg-slate-500 text-white"></div>
+ <div class="option px-2 py-3 border-1 rounded-md bg-slate-500 text-white"></div>
+ <div class="option px-2 py-3 border-1 rounded-md bg-slate-500 text-white"></div>
+ <div class="option px-2 py-3 border-1 rounded-md bg-slate-500 text-white"></div>
+    </div>
+    <div class="flex justify-end">
+        <button id="btn" class="mt-4 px-2 py-2 text-black rounded-full bg-green-700 w-[65px]">Next</button>
+    </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
